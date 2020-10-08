@@ -4,10 +4,9 @@ body {
     justify-content: space-between;
     font-family: "Tahoma";
     width: 1020px;
-    background: url(img/Background/Red_strike.png) 48.3% top no-repeat,
-                url(img/Background/pages_copy.png) 48.3% top no-repeat,
-                url(img/Background/pages_copy2.png) top center no-repeat;
-    /* background-size: 66% auto, auto, auto; */
+    background: url(img/background/red_strike.png) 48.3% top no-repeat,
+                url(img/background/pages_copy.png) 48.3% top no-repeat,
+                url(img/background/pages_copy2.png) top center no-repeat;
     margin: auto;
 }
 
@@ -16,8 +15,8 @@ body {
 header {
     display: flex;
     height: 170px;
-    background: url(img/Head/Pic.png) 420px 0% no-repeat,
-                url(img/Head/Background_Head.png) no-repeat;
+    background: url(img/head/pic.png) 420px 0% no-repeat,
+                url(img/head/background_head.png) no-repeat;
     background-size: auto 143px, 980px 100%;
 }
 
@@ -35,7 +34,7 @@ header > p {
 }
 
 .issue {
-    background: url(img/Head/Issue/background_issue.png) no-repeat;
+    background: url(img/head/issue/background_issue.png) no-repeat;
     font-size: 11px;
     line-height: 16px;
     color: #b90d16;
@@ -50,9 +49,14 @@ header > p {
     margin-top: 34px;
 }
 
-.icons_mail {
+.mail {
     margin-left: 10px;
     margin-top: 34px;
+    color: #414042;
+}
+
+.mail:hover {
+    text-decoration: none;
 }
 
 /* main content */
@@ -62,9 +66,9 @@ header > p {
     margin-top: 20px;
 }
 
-/* left column */
+/* navigation */
 
-.left {
+.navigation {
     display: flex;
     flex-direction: column;
     margin-left: 18px;
@@ -73,10 +77,10 @@ header > p {
 
 /* main menu */
 
-.Main_menu {
+.main_menu {
     background: 
-        url(img/Main_menu/Menu_Red.png) no-repeat,
-        url(img/Main_menu/Menu_Background.png) no-repeat;
+        url(img/main_menu/menu_red.png) no-repeat,
+        url(img/main_menu/menu_background.png) no-repeat;
     background-size: 150px 100%, 100% 100%;
     font-size: 12px;
     line-height: 30px;
@@ -92,16 +96,16 @@ header > p {
 
 .main_link:hover {
     background: 
-        url(img/Main_menu/arrows_red/Layer39_copy25.png) no-repeat right,
-        url(img/Main_menu/arrow_grey.png) no-repeat right;
-    margin-right: 55px;
-    padding-right: 25px;
+        url(img/main_menu/arrows_red/layer39_copy25.png) right center no-repeat,
+        url(img/main_menu/arrow_grey.png) right center no-repeat;
+    margin-right: 58px;
+    padding-right: 22px;
 }
 
 /* useful webs */
 
-.Useful_webs {
-    background: url(img/Useful_webs/Useful_Back.png) no-repeat;
+.useful_webs {
+    background: url(img/useful_webs/useful_back.png) no-repeat;
     background-size: 100% 100%;
     font-size: 11px;
     line-height: 30px;
@@ -110,6 +114,15 @@ header > p {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 60px;
+}
+
+.useful_webs > h1 {
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 20px;
+    color: #b7202e;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .useful_link {
@@ -122,8 +135,8 @@ header > p {
 
 /* contacts */
 
-.Contacts {
-    background: url(img/Useful_webs/Layer_115.png) no-repeat;
+.contacts {
+    background: url(img/useful_webs/layer_115.png) no-repeat;
     background-size: 100% 100%;
     margin-top: 20px;
     font-size: 11px;
@@ -132,7 +145,7 @@ header > p {
     padding-right: 60px;
 }
 
-.Contacts > h4 {
+.contacts > h4 {
     color: #b61c2a;
     font-weight: bold;
     margin-top: 20px;
@@ -153,7 +166,7 @@ header > p {
 }
 
 .welcome {
-    background: url(img/Function_part/Grey_back.png);
+    background: url(img/function_part/grey_back.png);
     background-size: 100% 100%;
     padding: 20px;
 }
@@ -181,11 +194,11 @@ header > p {
     line-height: 19px;
     color: #b61d22;
     font-weight: bold;
-    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .sfs {
-    background: url(img/Function_part/arrows_dash/arrows_red.png) no-repeat 0% 50%;
+    background: url(img/function_part/arrows_dash/arrows_red.png) no-repeat left 70%;
     color: #b61d22;
     padding-left: 15px;
 }
@@ -194,9 +207,9 @@ header > p {
     text-decoration: none;
 }
 
-/* right column */
+/* aside */
 
-.right {
+.aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -204,10 +217,10 @@ header > p {
 
 /* Banner */
 
-.Banner {
+.banner {
     display: flex;
     flex-direction: column;
-    background: url(img/Banner/Banner_background.png) no-repeat;
+    background: url(img/banner/banner_background.png) no-repeat;
     background-size: 100% 100%;
     padding: 20px;
     font-size: 11px;
@@ -234,13 +247,13 @@ header > p {
     text-decoration: none;
 }
 
-/* News right */
+/* News aside */
 
-.News_right {
+.aside_content {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background: url(img/News_right/News_background.png) no-repeat;
+    background: url(img/news_right/news_background.png) no-repeat;
     background-size: 100% 100%;
     margin-top: 20px;
     padding: 20px;
@@ -249,7 +262,7 @@ header > p {
     line-height: 15px;
 }
 
-.News_right > p {
+.aside_news > p {
     margin: 10px 0;
 }
 
